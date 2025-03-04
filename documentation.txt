@@ -49,7 +49,22 @@ text`
 always use single quote as default
 
 
+Variables :- 
 
+cant use special words for variable :- foreg :- let
+
+cant start with a number 
+
+cant use specail characters except :- $ _
+eg :- let $name =3 and let _name =3;
+
+variable RE-assignment Shortcut 
++=2 variable = variable +2;
+-=2 variable = variable -2;
+/=2 variable = variable /2;
+*=2 variable = variable *2;\
+++  variable = variable +1
+--  variable = variable -1
 
 
 
