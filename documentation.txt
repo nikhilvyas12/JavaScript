@@ -1,0 +1,56 @@
+JAvascript -- uses esic as compiler 
+
+java script is cas sensitive language 
+
+Syntax for math 
++,-*./
+
+order of operation 
+BODMAS 
+
+* / are done first -- it has same precedence and when both are there it work left to right 
++ - are done after -- it has same precedence and when both are there it work left to right 
+() brackets have highest priority
+
+2,3,4 integer numbers 
+0.2.0.4 -- floating pointnumbers 
+Math.round();
+
+
+Strings
+strings comes in sing quote '' -- 'hello'
+
+concatination
+'dsds'+'sdsd'+'dsd' =
+
+type cohesion or type conversion 
+'ksldk'+'2' = 'ksldk2'
+
+check type = type of 'hello = strong' or type of 22 = numbers.
+javaScript we cas use sing quptes and double quotes both .
+
+"I'm learning JavaScript" -- this will work in the case where quote is present in the string
+
+Escape Character :- 
+letter , number , symbol are character but esape character is \'  -- it create next character as next character as text
+\" create double quote
+\n new line character
+
+String 3rd way 
+template string -- `your string` used for interpolation 
+
+for eg:- `ITEMS(${1+1})` --`ITEMS(${1+1}):$${(2095+799)/100}` this is interpolation which is clear way
+
+multi line string 
+`some 
+text`
+'some \ntext'
+'..' vs "..."
+always use single quote as default
+
+
+
+
+
+
+
