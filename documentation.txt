@@ -66,6 +66,22 @@ variable RE-assignment Shortcut
 ++  variable = variable +1
 --  variable = variable -1
 
+Naming Convention 
+camelCase  nikhilVyas default
+PascalCase NikhilVyas
+kebab-case doesnt work in js but ued in html and css
+snake_case nikhil_vyas
+
+3 ways to create variable 
+let varaible1; use when you know you need to change the value
+const varaible2; --value stays constant can not be rechanged like final (use const by default)
+var variable3=3; can be changed later it is the original way there is some issue that is why we can not use in new js code.
+
+typeof -- used to know the type of value inside the variable.
+
+
+
+
 
 
 
