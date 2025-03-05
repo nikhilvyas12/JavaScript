@@ -75,13 +75,71 @@ snake_case nikhil_vyas
 3 ways to create variable 
 let varaible1; use when you know you need to change the value
 const varaible2; --value stays constant can not be rechanged like final (use const by default)
-var variable3=3; can be changed later it is the original way there is some issue that is why we can not use in new js code.
+var variable3=3; can be changed later it is the original way there is some issue in using with scopes that is why we can not use in new js code.
 
 typeof -- used to know the type of value inside the variable.
 
 
+Booleans
+two values = true/false
+
+purpose of Booleans
+represtn something true or false;
+syntax
+let flag = true;
+
+
+Comparision Operator
+> greater than 
+< less than 
+
+>= greater than equal 
+<= less than equal
+
+=== equal to  (special case) // 5 == '5.0'  == converst both value into same type that is why we used === not conversion ==
+
+!== not equal to //in JS we use !== and not != to avoid conversation behaviour
+
+comparision operator order
+1.(..)
+2.*/
+3.+-
+4.comparision operator   have lower priority then lath operator 
+for eg :- (3>5 -5) 5-5 will caluate first and then 3>value
+
+
+if-Statements
+if and else 
+else is optional
+else if
+
+
+logical operator
+logical AND operator && -- short circuit evaluation because it check first part if it is false it stops and give false result
+logical or operator ||
+logical not operator !
+
+Scope
+local Scope {inside the local scope }
+global Scope
+
+
+truthy and Falsy value
+
+Falsy values
+false 0 '' NaN undefined null any value not on this list is truthy value
+
+if(5)
+{
+  console.log('truthy') //it returns truthy but 0 will return falsy
+}
+
+
+NaN is not an number 
 
 
 
-
-
+Sortcuts for if-Statement 
+- Ternary Operator?:
+-Guard Operator && -- false &&console.log('hello');
+- Default OPerator |  --check if atleast 1 side is truthy
