@@ -10,71 +10,74 @@
 <body>
   <p>Rock Paper Scissor</p>
   <button onclick=" 
- const randomNumber = Math.random();
+ const randomNumberRock = Math.random();
 
- let computerMove = '';
+ let computerMoveRock = '';
 
- if(randomNumber >=0  && randomNumber<1/3)
+ if(randomNumberRock >=0  && randomNumberRock<1/3)
  {
-   computerMove ='rock';
+  computerMoveRock ='rock';
 }
-  else if(randomNumber >= 1/3 && randomNumber <2/3)
+  else if(randomNumberRock >= 1/3 && randomNumberRock <2/3)
  {
-   computerMove ='Paper';
+  computerMoveRock ='Paper';
  }
- else if(randomNumber >= 2/3 && randomNumber <1){
-   computerMove ='Scissor';
+ else if(randomNumberRock >= 2/3 && randomNumberRock <1){
+  computerMoveRock ='Scissor';
  }
 
- console.log(computerMove);
+ console.log(computerMoveRock);
 
- let result ='';
- if(computerMove === 'rock'){
+ let resultRock ='';
+ if(computerMoveRock === 'rock'){
   result = 'Tie.';
  }
- else if(computerMove === 'Paper'){
+ else if(computerMoveRock === 'Paper'){
   result = 'YOu Lose.';
  }
 
- else if(computerMove === 'Scissor'){
+ else if(computerMoveRock === 'Scissor'){
   result = 'you Win.';
  }
 
- alert(`You picked rock. Computer picked ${computerMove}. ${result}.`);
+ alert(`You picked rock. Computer picked ${computerMoveRock}. ${resultRock}.`);
  ">Rock</button>
+  <!-- comment for starting Paper  -->
   <button onclick=" 
- const randomNumber = Math.random();
+ const randomNumberPaper = Math.random();
 
- let computerMove = '';
+ let computerMovePaper = '';
 
- if(randomNumber >=0  && randomNumber<1/3)
+ if(randomNumberPaper >=0  && randomNumberPaper<1/3)
  {
-   computerMove ='rock';
+  computerMovePaper ='rock';
 }
-  else if(randomNumber >= 1/3 && randomNumber <2/3)
+  else if(randomNumberPaper >= 1/3 && randomNumberPaper <2/3)
  {
-   computerMove ='Paper';
+  computerMovePaper ='Paper';
  }
- else if(randomNumber >= 2/3 && randomNumber <1){
-   computerMove ='Scissor';
+ else if(randomNumberPaper >= 2/3 && randomNumberPaper <1){
+  computerMovePaper ='Scissor';
  }
 
- console.log(computerMove);
+ console.log(computerMovePaper);
 
- let result ='';
- if(computerMove === 'rock'){
+ let resultPaper ='';
+ if(computerMovePaper === 'rock'){
   result = 'You win.';
  }
- else if(computerMove === 'Paper'){
+ else if(computerMovePaper === 'Paper'){
   result = 'Tie.';
  }
 
- else if(computerMove === 'Scissor'){
+ else if(computerMovePaper === 'Scissor'){
   result = 'you Lose.';
  }
 
- alert(`You picked Paper. Computer picked ${computerMove}. ${result}.`);
+ alert(`You picked Paper. Computer picked ${computerMovePaper}. ${resultPaper}.`);
  ">Paper</button>
+  <!---Scissor-->
+
   <button onclick=" 
  const randomNumber = Math.random();
 
@@ -108,9 +111,6 @@
 
  alert(`You picked Scissor. Computer picked ${computerMove}. ${result}.`);
  ">Scissor</button>
-
-
-
   <script>
 
   </script>
