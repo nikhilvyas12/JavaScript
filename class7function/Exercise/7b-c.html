@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7a</title>
+</head>
+
+<body>
+  <script>
+    greet('Nikhil');
+    greet('Michel');
+    greet('Tarun');
+    greet('Rajat');
+    greet('Harald');
+
+    //undefined
+    greet();
+
+    function greet(name) {
+      if (!name)// or you can use also like thi  if (name == undefined) current consition is faluy value os it is giving the result as undefined is falsy value
+        console.log(`Hi there !`);
+      else
+        console.log(`Hello ${name}  from greet function`);
+    }
+  </script>
+</body>
+
+</html>

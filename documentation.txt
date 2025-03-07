@@ -153,3 +153,24 @@ function name$_(){
   function body
 }
 best practise use camelCase
+
+function creates scope ,
+{
+  we can not access variable here to outside it is scoped to local
+}
+
+
+Parameters RUles
+1) cant use soecail words.
+2) cant start with a number 
+3) cat use special character except $_name
+4) best use camelCase
+
+calculate(500);
+
+function(parameter/argument/value){
+  parameter/argument/value can be used in this scope only;
+}
+
+passing an value or we can say argument to the calculate function.
+

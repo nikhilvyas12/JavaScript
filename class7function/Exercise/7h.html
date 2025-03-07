@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function convertLength(length, from, to) {
+      if (from === 'KM' && to === 'MILES') {
+        return `${length / 1.6} miles`;
+      }
+      else if (from === 'MILES' && to === 'KM') {
+        return `${length * 1.6} KM`;
+      }
+      else if (from === 'MILES' || from === 'KM' && to === 'FT') {
+        return milesToftCOnversion(length, from, to);
+      }
+      else if (from === to) {
+        return `${length} ${to}`;
+      }
+
+    }
+
+    function milesToftCOnversion(length, from, to) {
+      console.log(from, to);
+      if (from === 'MILES')
+        return `${length * 5280} FT`;
+      else if (from === 'KM')
+        return `${length * 3281} FT`;
+    }
+    console.log(convertLength(5, 'MILES', 'KM'));
+    console.log(convertLength(5, 'MILES', 'FT'));
+    console.log(convertLength(5, 'KM', 'FT'));
+  </script>
+</body>
+
+</html>

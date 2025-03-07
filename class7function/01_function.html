@@ -11,13 +11,23 @@
 
 
   <script>
-    function function1() {
+    /*function function1() {
       console.log('hello1');
       console.log(1 + 2);
+
     }
 
     function1();
-    function1();
+    function1();*/
+
+    function calculateTax(cost, taxPercent = 0.1) {
+      console.log(taxPercent);
+      console.log(cost * taxPercent);
+    }
+
+    calculateTax(2000, 0.3);
+    calculateTax(6000, 0.2);
+    calculateTax(6000);
   </script>
 </body>
 
