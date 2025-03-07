@@ -142,4 +142,14 @@ NaN is not an number
 Sortcuts for if-Statement 
 - Ternary Operator?:
 -Guard Operator && -- false &&console.log('hello');
-- Default OPerator |  --check if atleast 1 side is truthy
+- Default OPerator |  --check if atleast 1 side is truthy 
+
+
+Function
+function let us resue the code
+
+syntax rule
+function name$_(){
+  function body
+}
+best practise use camelCase
