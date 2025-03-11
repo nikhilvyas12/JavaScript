@@ -174,3 +174,36 @@ function(parameter/argument/value){
 
 passing an value or we can say argument to the calculate function.
 
+Objects:- 
+what is an object :- an object can groups multiple values together.
+{property : value ,....}
+objects are another type of value;
+objects make our code more organized.
+it let us use multiple value together .
+
+we can access the property and value using . and with breaket annotation[]
+we use [] where it is not possible to get the values using object.property value like eg :- object.delivery-time here we need to use 
+object['delivery-time'] to get the value
+/object inside object is allowed
+//function inside object is method
+//function is another type of value we can save them in objects
+    console.log(product2.name); //default
+    console.log(product2['delivery-time']); //sepcial case
+
+    Json build in object
+    - helps us work with JSON -- java script object notation
+    a syntax has less feature 
+    in JSOn all need to use double quotes ""
+    similar to JS 
+    Json can be understood all the programming languages 
+    we send data using json between computer 
+
+    build-in Json Object 
+    convert:
+    JS object --> Json
+
+
+    const jsonString = JSON.stringify(product2); //converting to json from JS object
+    console.log(JSON.parse(jsonString)); parsing again into JS obejct
+
+    local storage
