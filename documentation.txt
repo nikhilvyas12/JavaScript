@@ -206,4 +206,25 @@ object['delivery-time'] to get the value
     const jsonString = JSON.stringify(product2); //converting to json from JS object
     console.log(JSON.parse(jsonString)); parsing again into JS obejct
 
-    local storage
+    local storage.setItem ;
+
+    null 
+
+    null is a falsy value similar to undefined 
+
+    null vs undefined 
+    use null if intentially need to be emopty  ;
+
+    function func(parameter ='default')
+    {
+      console.log(paramter);
+    }
+
+    func(); ==> 'default';
+    func(undefined) ==> 'default' ;-- if undefined did not find any value it will take the dfault value;
+
+    func(null) ==> null -- it will not use the default value ;intentionally emoty 
+
+
+    Autoboxing 
+    
