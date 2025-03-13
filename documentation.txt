@@ -206,7 +206,7 @@ object['delivery-time'] to get the value
     const jsonString = JSON.stringify(product2); //converting to json from JS object
     console.log(JSON.parse(jsonString)); parsing again into JS obejct
 
-    local storage.setItem ;
+    local storage.setIte(name , string)) ; local storage only supports string
 
     null 
 
@@ -226,5 +226,19 @@ object['delivery-time'] to get the value
     func(null) ==> null -- it will not use the default value ;intentionally emoty 
 
 
-    Autoboxing 
-    
+  autoboxing :- JS wrap property to object and then work on this . works with numbers and booleans and not work with null and undefined
+  object are references -- they get saved in memory location and it get stored  there , direct comparision of two differenct object is false as they pooints to different locations.
+  although we can compare the properties inside the two different objects
+
+
+
+  destructuring the object
+  you can destructure the object in
+
+
+  shorthand property
+
+
+  shorthand methods
+
+

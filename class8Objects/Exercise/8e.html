@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8e</title>
+</head>
+
+<body>
+
+  <script>
+
+
+    //8f
+    console.log("CONVERTING TO LOWERCASE".toLowerCase());
+
+    //8g
+    console.log("RAM".repeat(3));
+
+    const cproduct1 = {
+      name: 'basketball',
+      price: 500
+    }
+
+    const cproduct2 = {
+      name: 'basketball',
+      price: 480
+    }
+    const cproduct4 = {
+      name: 'basketballs',
+      price: 3000
+    }
+
+    const cproduct3 = cproduct1;
+
+    console.log(isSameProduct(cproduct1, cproduct2));
+    console.log(isSameProduct(cproduct1, cproduct3));
+    console.log(isSameProduct(cproduct1, cproduct4));
+
+    function isSameProduct(product1, product2) {
+      if (product1.name === product2.name && product1.price === product2.price)
+        return 'both are same';
+      else if (product1.name === product2.name && product1.price !== product2.price)
+        return 'name is same but price is different'
+      else
+        return 'both are different'
+    }
+
+    //alternative way 
+    function isSameProduct(product1, product2) {
+      return (
+        product1.name === product2.name &&
+        product1.price === product2.price
+      );
+    }
+  </script>
+</body>
+
+</html>

@@ -57,6 +57,73 @@
         */
 
     console.log('hello'.length);
+    console.log('hello'.toUpperCase); // autoboxing :- JS wrap property to object and then work on this . works with numbers and booleans and not work with null and undefined 
+
+
+    const object1 = {
+      message: 'hello'
+    }
+
+    const object2 = object1; //reference will get checked and assigned to object 2
+
+
+    //this object will point to another reference and it is not the same as object 1 and object 2
+    const object3 = {
+      message: 'hello'
+    }
+
+    console.log(object1 === object3); //it will be false 
+
+    const object4 = {
+      message: 'hello',
+      cost: 799
+    }
+
+    //destructuring the object 
+    //we can get the property out of the object and assign it like this .
+
+    // const message =object1.message;
+
+
+    //or we there is another way to destructure directly is 
+    //this is called as shorthand property 
+    //const { message } = object1;
+
+    //and we can do it with multiple properties
+    const { message, cost } = object4;
+    console.log(message);
+    console.log(cost);
+
+
+    //shorthand property
+    const object5 = {
+      // message: message
+      message, //if property and variable name are same we can use it only for once .
+    }
+    console.log(object5);
+    //we can also have the methods in object 
+    const object6 = {
+      message,
+      // method: function func1() {
+      //   console.log(
+      //     'method'
+      //   )
+
+      //this below code do the same thing as above but it is an shorter way of doing it it is called as shorthand method // function name is actually not needed.
+      method() {
+        console.log('method')
+      }
+
+    };
+
+    console.log(object6);
+    object6.method();
+
+
+
+
+
+
 
   </script>
 </body>
