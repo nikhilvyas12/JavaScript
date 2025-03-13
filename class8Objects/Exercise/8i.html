@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
   <title>Toss Game</title>
 </head>
 
@@ -20,11 +21,22 @@
   ">Tails</button>
   </p>
   <script>
+    // We can use const here since score is a reference
+    // so we can modify it even if it uses const.
+    // const score = JSON.parse(localStorage.getItem('score')) || {
+    //   wins: 0,
+    //   losses: 0
+    // };
 
-    const score = JSON.parse(localStorage.getItem('score')) || {
-      wins: 0,
-      loss: 0
-    };
+
+    let score;
+    try {
+      score = JSON.parse(localStorage.getItem('score')) || { wins: 0, losses: 0 };
+    } catch (error) {
+      console.error("Error parsing score from localStorage. Resetting score.", error);
+      score = { wins: 0, losses: 0 }; // Reset in case of error
+    }
+
 
     function playGame(guess) {
       const randomNumber = Math.random();
@@ -34,18 +46,13 @@
 
       if (guess === result) {
         score.wins++;
+      } else {
+        score.losses++;
       }
-      else {
-        score.loss++;
-        //return `You Loose as you choose ${guess} and result is ${result}`
-      }
-
       console.log(score);
+
       localStorage.setItem('score', JSON.stringify(score));
     }
-
-
-
   </script>
 </body>
 
