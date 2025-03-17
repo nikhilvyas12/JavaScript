@@ -150,6 +150,8 @@ function calculate(price) {
   console.log(price);
 }
 calculate(500);
+
+
 Objects
 
 Definition: Groups multiple values together.
@@ -200,3 +202,5 @@ Usage:
 javascript
 Copy
 localStorage.setItem('key', 'value');
+
+
