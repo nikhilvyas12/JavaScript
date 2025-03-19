@@ -233,12 +233,77 @@ object['delivery-time'] to get the value
 
 
   destructuring the object
-  you can destructure the object in
+    //destructuring the object 
+    //we can get the property out of the object and assign it like this .
+
+    // const message =object1.message;
 
 
-  shorthand property
+    //or we there is another way to destructure directly is 
+    //this is called as shorthand property 
+    //const { message } = object1;
+
+    //and we can do it with multiple properties
+    const { message, cost } = object4;
+    console.log(message);
+    console.log(cost);
 
 
-  shorthand methods
+    //shorthand property
+    const object5 = {
+      // message: message
+      message, //if property and variable name are same we can use it only for once .
+    }
+    console.log(object5);
+    //we can also have the methods in object 
+    const object6 = {
+      message,
+      // method: function func1() {
+      //   console.log(
+      //     'method'
+      //   )
+
+      //this below code do the same thing as above but it is an shorter way of doing it it is called as shorthand method // function name is actually not needed.
+      method() {
+        console.log('method')
+      }
+
+    };
+
+
+    DOM (document object model)
+  document objects represents /models the webpage thas is why it is dom.
+
+dom is just built in document object
+
+document object have methods and properties
+
+dom combines html and JS together.
+
+inside JS dom if you use html you will get the 
+
+
+method is a function which is saved inside the object .
+
+document.biody let us put html inside body , when an html element is isndie the js it becomes the object .
+
+clicks,keydown=> events
+onclick,onkeydown --> event listeners
+other --> onclick , onkeydown,onscroll,onmouseenter,onmouseleave
+
+when in case we have to add the number like 
+'25'+5 == it will do the concatinationi n case of +
+but in case of *-/ JS will automatically converst it into number and do the maths 
+for eg:- ('25'-5 ) = 20 due to type conversion in numbr we also says it TypeCoersion
+Always do maths with numbers not with strings 
+
+
+window object represt the object eg :- window.document --will give us the same webpage
+windows.console.log(); is similar to console.log();
+windows.alert() is similar to alert()
+
+
+document object represent the webpage
+
 
 
