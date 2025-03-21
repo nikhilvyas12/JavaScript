@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <input type="text" placeholder="write something" onkeydown="printMessage()" class="js-input">
+  <p class="js-message"></p>
+
+  <script>
+    function printMessage() {
+      let message = document.querySelector('.js-input').innerHTML;
+
+      document.querySelector('.js-message').innerHTML = message.value;
+
+    }
+  </script>
+</body>
+
+</html>
