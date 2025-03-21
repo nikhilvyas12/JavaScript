@@ -9,12 +9,7 @@
 
 <body>
 
-  <input type="text" placeholder="Write your Name" class="js-getName" onkeydown="
-    if(event.key === 'Enter'){
-      printMessage();
-    }
-    
-    ">
+  <input type="text" placeholder="Write your Name" class="js-getName" onkeydown="printMessage()">
   <button onclick="
  printMessage();
   ">Submit</button>
@@ -26,7 +21,6 @@
       const name = document.querySelector('.js-getName');
       document.querySelector('.js-mesage-display').innerHTML = `Your Name is: ${name.value}`;
     }
-
   </script>
 
 </body>
