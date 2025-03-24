@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .css-cost-input {
+      padding: 10px;
+    }
+
+    .css-shipcalc-btn {
+      padding: 11px 15px;
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    .error {
+      color: red;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Amazon Shipping calculator</p>
+  <input type="text" placeholder="Cost of Order" class="js-cost-input css-cost-input"
+    onkeydown="handleCostKeydown(event);">
+  <button class="css-shipcalc-btn" onclick="checkShippingTotal()">Calculate</button>
+
+  <p class="js-totalcost"></p>
+
+  <script>
+    function handleCostKeydown(event) {
+      if (event.key === 'Enter') {
+        checkShippingTotal();
+      }
+    }
+
+
+    function checkShippingTotal() {
+      const inputElement = document.querySelector('.js-cost-input');
+      const message_para = document.querySelector('.js-totalcost');
+      let cost = Number(inputElement.value);
+      if (cost < 40 && cost > 0) {
+        cost = cost + 10;
+        message_para.classList.remove('error');
+        message_para.innerHTML = `Total Cost With Shipping $${cost}`;
+      }
+      else if (cost < 0) {
+        message_para.classList.add('error');
+        message_para.innerHTML = `Error: cost cannot be less than $0`;
+      }
+
+      else {
+        message_para.classList.remove('error');
+        message_para.innerHTML = `Total Cost With Shipping $${cost}`;
+      }
+
+
+    }
+  </script>
+</body>
+
+</html>
