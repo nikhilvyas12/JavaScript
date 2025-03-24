@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Project</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .css-subscrbe-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 15px;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .is-subscribed {
+      background-color: ghostwhite;
+      color: black;
+    }
+
+    .css-cost-input {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .css-shipcalc-btn {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <p>You Tube Subscribe button</p>
+  <button onclick="
+subscribeButton();
+  " class="js-subscribe-button  css-subscrbe-btn">Subscribe</button>
+
+  <p>Amazon Shipping calculator</p>
+  <input type="text" placeholder="Cost of Order" class="js-cost-input css-cost-input"
+    onkeydown="handleCostKeydown(event);">
+  <button class="css-shipcalc-btn" onclick="checkShippingTotal()">Calculate</button>
+
+  <p class="js-totalcost"></p>
+
+  <script>
+    function handleCostKeydown(event) {
+      if (event.key === 'Enter') {
+        checkShippingTotal();
+      }
+    }
+
+    function subscribeButton() {
+      const buttonElement = document.querySelector('.js-subscribe-button');
+      console.log(buttonElement.innerHTML);
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerHTML = 'Subscribed';
+        buttonElement.classList.add('is-subscribed');
+      }
+      else {
+        buttonElement.innerHTML = 'Subscribe';
+        buttonElement.classList.remove('is-subscribed');
+      }
+    }
+
+    function checkShippingTotal() {
+      const inputElement = document.querySelector('.js-cost-input');
+      let cost = Number(inputElement.value);
+      if (cost < 40) {
+        cost = cost + 10;
+      }
+      document.querySelector('.js-totalcost').innerHTML = `Total Cost With Shipping ${cost}`;
+    }
+  </script>
+</body>
+
+</html>
